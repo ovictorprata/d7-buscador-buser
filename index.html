@@ -14,6 +14,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -23,7 +29,8 @@
       <div class="blank-space"></div>
       <a href="" class="login-font">Entrar</a>
     </header>
-
+  </head>
+  <body>
     <div class="container">
       <p class="font-slogan">
         Viagens de ônibus mais baratas que a passagem da rodoviária
@@ -31,8 +38,8 @@
       <p class="font-slogan-subtopic">Sem taxas, com segurança e preço justo</p>
 
       <div class="container-search">
-        <p class="container-search-font-text">Saindo de</p>
         <div>
+          <p class="container-search-font-text">Saindo de</p>
           <input
             type="text"
             name="origin"
@@ -40,27 +47,48 @@
           />
         </div>
         <!--DIV ORIGIN-->
+
         <div>
           <p class="container-search-font-text">Indo para</p>
+          <input
+            type="text"
+            name="destination"
+            placeholder="São Paulo - SP"
+            class="destination"
+          />
         </div>
-        <input type="text" name="destination" placeholder="São Paulo - SP" />
-        <p class="container-search-font-text">Data de ida</p>
-        <input type="date" name="name" placeholder="Ida" />
-        <p class="container-search-font-text">Data de volta</p>
-        <input type="date" name="name" placeholder="Volta" />
-        <button class="search-btn">
-          <img src="./img/magnifying-glass.svg" class="search-btn-icon" />Buscar
-        </button>
+        <div>
+          <p class="container-search-font-text">Data de ida</p>
+          <input
+            type="text"
+            placeholder="Ida"
+            onfocus="(this.type='date')"
+            id="destination-date"
+          />
+        </div>
+        <div>
+          <p class="container-search-font-text">Data de volta</p>
+          <input type="text" placeholder="Volta" onfocus="(this.type='date')" />
+        </div>
+
+        <div>
+          <button class="search-btn">
+            <img
+              src="./img/magnifying-glass.svg"
+              class="search-btn-icon"
+            />Buscar
+          </button>
+        </div>
       </div>
+
+      <div class="gap-pink">
+        <img src="./img/onibus-rosa.png" class="gap-pink-img" />
+      </div>
+
       <!--DIV CONTAINER SEARCH END-->
-      <div>
-        <img src="./img/onibus-rosa.png" class="bottom-img" />
-      </div>
     </div>
-    <!--DIV CONTAINER END-->
 
     <footer>
-      <!--SEARCH-->
       <button class="footer-btn">
         <img src="./img/magnifying-glass-black.svg" class="bottom-img" />
         <p>Buscar</p>
@@ -82,6 +110,7 @@
         <p>Ajuda</p>
       </button>
     </footer>
-  </head>
-  <body></body>
+
+    <!--DIV CONTAINER END-->
+  </body>
 </html>
