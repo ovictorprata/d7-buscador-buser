@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
-    <title>Document</title>
+    <title>Buser</title>
     <header>
       <img src="./img/logo-buser-menu.png" />
       <div class="blank-space"></div>
@@ -44,17 +44,19 @@
             type="text"
             name="origin"
             placeholder="São José dos Campos - SP"
+            id="origin"
+            class="icon-input icon-input-origin"
           />
         </div>
-        <!--DIV ORIGIN-->
 
         <div>
           <p class="container-search-font-text">Indo para</p>
+
           <input
             type="text"
             name="destination"
             placeholder="São Paulo - SP"
-            class="destination"
+            class="icon-input icon-input-destination"
           />
         </div>
         <div>
@@ -64,11 +66,17 @@
             placeholder="Ida"
             onfocus="(this.type='date')"
             id="destination-date"
+            class="icon-input icon-input-date"
           />
         </div>
         <div>
           <p class="container-search-font-text">Data de volta</p>
-          <input type="text" placeholder="Volta" onfocus="(this.type='date')" />
+          <input
+            type="text"
+            placeholder="Volta"
+            onfocus="(this.type='date')"
+            class="icon-input icon-input-date"
+          />
         </div>
 
         <div>
